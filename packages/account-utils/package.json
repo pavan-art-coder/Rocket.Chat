@@ -2,6 +2,13 @@
 	"name": "@rocket.chat/account-utils",
 	"version": "0.0.3",
 	"private": true,
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		}
+	},
 	"main": "./dist/index.js",
 	"typings": "./dist/index.d.ts",
 	"files": [
@@ -13,6 +20,9 @@
 		"lint": "yarn run -T oxlint",
 		"lint:fix": "yarn run -T oxlint --fix",
 		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@rocket.chat/random": "workspace:^"
 	},
 	"devDependencies": {
 		"typescript": "~7.0.2"

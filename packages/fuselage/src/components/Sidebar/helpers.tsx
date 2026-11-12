@@ -1,4 +1,4 @@
-import type { Decorator } from '@storybook/react-webpack5';
+import type { Decorator } from '@storybook/react';
 
 import {
 	Sidebar,
@@ -50,7 +50,7 @@ export const names = [
 ];
 
 export const MenuTemplate = () => (
-	<Menu mini aria-label='Options' title='Options'>
+	<Menu size='mini' aria-label='Options' title='Options'>
 		<MenuItem key='hide'>Hide</MenuItem>
 		<MenuItem key='discussion'>Mark unread</MenuItem>
 		<MenuItem key='unfavorite'>Unfavorite</MenuItem>
